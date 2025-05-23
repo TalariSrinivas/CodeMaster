@@ -11,10 +11,8 @@ const CodeBot = () => {
   const handleSubmit = async () => {
     setLoading(true);
     try {
-      const res = await axios.post(
-        `${process.env.REACT_APP_API_BASE_URL}/api/codebot/generate-code`,
-        { prompt }
-      );
+      const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/codebot/generate-code`, { prompt });
+
       setResponse(res.data.code);
     } catch (err) {
       console.error(err);
