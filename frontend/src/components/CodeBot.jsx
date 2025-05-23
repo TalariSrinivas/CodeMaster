@@ -1,3 +1,4 @@
+// CodeBot.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Bot } from 'lucide-react';
@@ -10,9 +11,13 @@ const CodeBot = () => {
   const handleSubmit = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/codebot/generate-code', { prompt });
+      const res = await axios.post(
+        `${process.env.REACT_APP_API_BASE_URL}/api/codebot/generate-code`,
+        { prompt }
+      );
       setResponse(res.data.code);
     } catch (err) {
+      console.error(err);
       setResponse('// Error generating code. Please try again.');
     } finally {
       setLoading(false);
