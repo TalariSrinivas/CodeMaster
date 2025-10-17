@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Mail, Star, UserCircle2, Medal } from 'lucide-react'; // ✅ Import Medal icon
 import { useUser } from '../context';
 import axios from 'axios';
-
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 const ProfilePage = () => {
   const navigate = useNavigate();
   const { user } = useUser();
