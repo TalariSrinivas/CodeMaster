@@ -17,9 +17,8 @@ connectDB();
 
 // Global Middleware
 // You can customize CORS options here if needed
-app.use(cors({
-  origin: '*' // or restrict to your frontend URL(s)
-}));
+app.use(cors());
+
 app.use(express.json());
 
 // Health Check Route
