@@ -14,7 +14,7 @@ const ProfilePage = () => {
       navigate('/login');
     } else {
       axios
-        .get(`http://localhost:5000/api/users/${user}`)
+        .get(`${backendUrl}/api/users/${user}`)
         .then((res) => setUserData(res.data))
         .catch((err) => console.error('Error fetching user data:', err));
     }
