@@ -8,9 +8,9 @@ const teamMembers = [
     image: '/pic.png',
   },
   {
-    name: 'Md Azeez',
+    name: 'Ramji Katla',
     role: 'Backend Engineer',
-    image: '/azeez.jpg',
+    image: '/ramji.jpg',
   },
   {
     name: 'Sk Saboor',
