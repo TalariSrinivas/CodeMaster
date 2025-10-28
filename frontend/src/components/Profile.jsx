@@ -56,7 +56,7 @@ const ProfilePage = () => {
           <div className="relative">
             <img
               className="w-32 h-32 rounded-full border-4 border-indigo-500 shadow-lg object-cover"
-              src={userData.image || '/pic.png'}
+              src={userData.image || '/ramji.png'}
               alt="Profile"
             />
             <span className="absolute bottom-0 right-0 bg-indigo-600 p-2 rounded-full">
