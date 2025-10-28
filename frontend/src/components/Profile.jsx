@@ -26,7 +26,7 @@ const ProfilePage = () => {
   const allBadges = [
     {
       name: 'Rookie',
-      minScore: 50,
+      minScore: 20,
       color:
         'bg-white dark:bg-gray-900 text-gray-800 dark:text-white border border-gray-200 dark:border-gray-700',
       image: '/B1.png',
