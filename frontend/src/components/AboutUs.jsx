@@ -2,21 +2,12 @@ import React from 'react';
 import { Users, Code, Rocket, Heart } from 'lucide-react';
 
 const teamMembers = [
-  {
-    name: 'T Srinivas',
-    role: 'Frontend Developer',
-    image: '/pic.png',
-  },
+  
   {
     name: 'Ramji Katla',
     role: 'Backend Engineer',
-    image: '/ramji.jpg',
-  },
-  {
-    name: 'Sk Saboor',
-    role: 'UI/UX Designer',
-    image: '/saboor.jpg',
-  },
+    image: '/ramji.png',
+  }
 ];
 
 const AboutUs = () => {
